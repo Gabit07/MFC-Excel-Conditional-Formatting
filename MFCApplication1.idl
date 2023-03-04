@@ -1,0 +1,29 @@
+// MFCApplication1.idl : type library source for MFCApplication1.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (MFCApplication1.tlb).
+
+[ uuid(1ff72cc3-b220-401e-aa98-a79a6f9c887b), version(1.0) ]
+library MFCApplication1
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CMFCApplication1Doc
+
+	[ uuid(2630887f-970a-4f36-9082-12b15d1c0f42) ]
+	dispinterface IMFCApplication1
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Class information for CMFCApplication1Doc
+
+	[ uuid(dd223745-877f-4c92-b5a7-19c5b2b59613) ]
+	coclass MFCApplication1
+	{
+		[default] dispinterface IMFCApplication1;
+	};
+};
